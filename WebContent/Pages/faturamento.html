@@ -1,0 +1,39 @@
+<div id="divTituloFaturamento"><h2 class="titleh2Faturamento">RELATÓRIO</h2></div>
+<div id="corpo-form-faturamento">
+	<form id="frmConsultaFaturamento">
+		<table id="menufaturamento">
+			<legend id="tituloMenuFaturamento">Consultar Relatório de Faturamento entre Períodos</legend>
+				<tr>
+					<td>
+						<div class="iconeMenuFaturamento"><i class="fas fa-calendar-alt fa-2x"></i></div>
+						<input type="text" id="data1" name="data1" placeholder="Informe a Primeira Data" autocomplete="off" onclick="PADARIA.CalendarioData1()">
+					</td>
+					<td>
+						<div class="iconeMenuFaturamento"><i class="fas fa-calendar-alt fa-2x"></i></div>
+						<input type="text" id="data2" name="data2" placeholder="Informe a Segunda Data" autocomplete="off" onclick="PADARIA.CalendarioData2()">
+					</td>
+				</tr>
+		</table>
+		<input type="button" id="consultaFaturamento" value="Visualizar em PDF" onclick="PADARIA.VendasPorPeriodo()">
+	</form>
+</div>	
+
+<!--  
+<div id="divTituloResultado"><h2 class="titleh2Faturamento">Resultado da Consulta</h2></div>
+<div id="listaProdutosVendidos">
+	<div id="configtabelaFaturamento">
+		<table class="tabelaResultadoConsulta">
+			<tr>
+				<th>Cód</th>
+				<th>Produto</th>
+				<th>DATA</th>
+				<th>Quantidade de Vendas</th>
+				<th>Faturamento de Cada Produto</th>
+				</tr>
+			<tr>
+				<td colspan="5">Aguardando Consulta...</td>
+			</tr>
+		</table>
+	</div>
+</div>
+-->

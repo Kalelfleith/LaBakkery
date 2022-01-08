@@ -1,0 +1,261 @@
+/***** CRUD DE VENDAS *****/
+
+#resultados{
+	width: 78.5%;
+    height: auto;
+    border: 1px solid #DCDCDC;
+    display: none;
+    background: white;
+    right: 4.5%;
+    float: right;
+    position: absolute;
+    top: 15.1%;	    
+}
+
+#tabela{
+	width:100%;
+	background:white;
+}
+#tabelaDeProdutos{
+	margin: 1%;
+    height: 95%;
+    width: 97%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#tabela td{	
+	padding: 5px; 
+	cursor: pointer;
+}
+#tabela tr:hover{
+	background:#DCDCDC;
+	
+}
+#principalResultadoVenda /*Tabela de resultados*/{
+	height: 87%;
+    width: 65%;    
+    float: right;
+    position: relative;
+    margin-top: 1px;
+}
+#principalAdicionaVenda{ /*Campo Iniciar Venda*/ 
+	height: 87%;
+    width: 35%;
+    float: left;
+    position: relative;
+    margin-top: 2px;
+}
+
+#corpo-form-venda{
+	background: #fff;
+	margin-top: 2%;
+	box-shadow: 0 7px 26px -2px rgb(0 0 0 / 10%);
+	border-radius: 4px;
+	border: 1px solid black;
+	text-align: center;
+	background: #fff;
+	height: 200px;
+	margin-left: 2%;
+}
+#campoBusca{	
+    height: 75%;
+    width: 97%;    
+    position: absolute;
+    float: left;
+}
+
+.inputs{
+	width: 77%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 1%;
+    margin-right: 4%;
+    text-align: right;
+    float: right;
+    border-bottom: 2px solid #737373;
+}
+
+select#selProduto{
+	display: block;
+    height: 35px;
+    width: 79.3%;
+    margin: 10px;
+    margin-right: 4%;
+    font-size: 12pt;
+    text-align: right;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0 7px 26px -2px rgb(0 0 0 / 10%);
+    border: 1px solid #a2a2a2;
+    border-bottom: 3px solid #737373;
+    float: right;
+    text-align: right;
+    padding: 1%;
+}
+
+label{
+	width: auto;
+    overflow: hidden;
+    font-size: 15px;
+    margin-right: 4%;    
+    color: #232323;
+    float: right;
+    margin-top: 2%;
+	margin-bottom: -10%;
+}
+
+#confirmaProduto{ /*Botão Adicionar Produto*/
+	width: 55%;
+	height: 60%;
+    background: #000000;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    float: left;
+    margin-left: 23%;
+}
+
+#tabelaAdicionaVenda{
+	float: left;
+	width: 90%;
+	
+}
+
+legend#tituloModalAdicionaVenda{
+	width: 100%;
+	text-align: center;
+}
+
+legend#tituloInserirVenda{
+	width: 98%;
+	text-align: center;
+	margin-top: 3%;
+	font-size: 18pt;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+#menuVendas{
+	width: 98%;
+	margin-top: 3%;
+}
+
+.icone{
+	height:auto;
+	width: 10%;    
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+/**** Configurações da Tabela de Vendas ****/
+
+.vendas {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+.vendas td, .vendas th {
+  border-bottom: 2px solid black;
+  padding: 8px;
+}
+.vendas th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: right;
+  color:black;
+}
+.vendas tr, .vendas td{
+	text-align: right;
+	border: none;
+}
+
+.idTab{ /*Corrigir alinhamento do TR e TD da Tabela de Vendas*/
+	text-align: center !important;
+}
+
+.borderTd{ /*Define as bordas da Tabela Vendas, Valor Total*/
+	border: 1px solid black !important;
+	text-align: center !important;
+}
+
+.borderTr{ /*Define as bordas da Tabela Vendas, Valor Total*/
+	border: 1px solid black !important;
+}
+
+.colunaPrincipal{
+	width:40%;
+	text-align:left !important;
+}
+.colunaProduto{
+	text-align:left !important;
+}
+#unidadeDeVenda{
+    position: absolute;
+    width: 10%;
+    height: 7%;
+    top: 26%;
+    left: 17.5%;
+    font-size: 22px;
+    font-family: Arial;
+}
+#acoes{
+    position: relative;
+    margin-left: 1%;
+    width: 97%;
+    height: 5%;    
+    top: 87%;
+    background:black;
+    border: 1px solid black;
+}
+.botoesAcoes {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: -22.5%;
+    border:1px solid black;
+    border-radius:10px;    
+}
+
+
+/***** Configurações do Botões de Ação *****/
+
+input#finalizaVenda {
+    left: 83%;
+    background: mediumseagreen;
+    color: white;
+}
+input#finalizaVenda:hover {    
+    background: #73e6a0;
+    color: black;
+}
+input#cancelaVenda {
+    background: #9b0000;
+    color: white;
+}
+input#cancelaVenda:hover {
+    background: #ff5131;
+    color: black;
+}
+
+input#adicionaVenda {
+	left: 67%;
+	background: #0abbef;
+    color: white;
+}
+
+input#adicionaVenda:hover {
+	background: #49d0f8;
+    color: black;
+}
+
+input[type="checkbox"] {
+    width: 100%;
+}

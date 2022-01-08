@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LOGIN DE USUÁRIO</title>
+	
+	<!-- Arquivo css da pagina de login -->
+	<link rel="stylesheet" href="Pages/Login/login.css">
+	
+	<!-- JS Login -->
+	<script type="text/javascript" charset="utf8" type="text/javascript" src="Pages/Login/login.js"></script>
+	
+	<!-- JS p/ Converter a Senha em Base64 -->
+	<script type="text/javascript" charset="utf8" type="text/javascript" src="js/converteSenha/envia.js"></script>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	
+</head>
+<body>
+
+<div id="divPrincipal">	
+	<h1>La Bakery</h1>
+	
+	<form name="formLogin" action="autenticar" method="POST" id="formLogin" onsubmit="return ConverteDadosLogin()">
+	
+		<div class="inputs">
+			<i class="fas fa-user"></i>
+			<input type="text" name="usuario" placeholder="Usuário" id="usuario">
+		</div>	
+		
+		<div class="inputs">
+			<i class="fas fa-lock"></i>	
+			<input type="password" name="senha" placeholder="Senha" id="senha">
+		</div>
+		<button class="botao" type="submit" name="botao">Entrar</button>
+		<a>Esqueceu sua senha?</a>
+				
+	</form>
+</div>
+
+
+</body>
+</html>

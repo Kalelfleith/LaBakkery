@@ -1,0 +1,72 @@
+<div id="geral">
+	<div id="divTituloVenda"><h2 class="titleh2">REGISTRAR UMA NOVA VENDA</h2></div>
+	<div id="principalResultadoVenda">
+		<div id="tabelaDeProdutos">		
+			<table class="vendas">
+				<tr>
+					<th class="idTab">#</th>
+					<th class="colunaPrincipal">Produtos</th>
+					<th>DATA</th>
+					<th>Quantidade</th>
+					<th>Valor Un</th>
+					<th>Ações</th>					
+				</tr>
+			</table>	
+		</div>	
+		<div id="acoes">
+			<input type="button" class="botoesAcoes" id="adicionaVenda" value="Adicionar" onclick="PADARIA.exibirModalVenda()">
+			<input type="button" class="botoesAcoes" id="finalizaVenda" value="Finalizar" onclick="PADARIA.finalizarVenda()">
+		</div>		
+	</div>
+	
+	<div id="principalAdicionaVenda">
+		<div id="corpo-form-venda">
+			<form name="frmConfirmaVenda">
+				<table id="menuVendas">
+					<legend id="tituloInserirVenda">Venda</legend>
+						<tr>
+							<td>
+								<div class="icone"><i class="fas fa-calendar-alt fa-2x"></i></div>
+								<input class="inputs" type="text" id="calendario" name="calendario" placeholder="Informe a Data" autocomplete="off" onclick="PADARIA.mostrarCalendario()">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" id="confirmaProduto" value="Nova Venda" onclick="PADARIA.inserirProdutoVenda()">
+							</td>
+						</tr>
+				</table>
+			</form>
+		</div>	
+	</div>
+</div>
+
+<div id="modalAdicionaVenda" class="modalEditar">
+	<form name="frmAdicionaProdutoVenda" id="addCategoria" class="frmInserir">
+		<table id="tabelaAdicionaVenda">
+			<legend id="tituloModalAdicionaVenda">Adicionar Produto</legend><br>
+			<tr>
+				<td>
+					<div class="icone"><i class="fas fa-search fa-2x"></i></div>			
+					<select id="selProduto" name="produto" onchange="PADARIA.selecionaValorSel()"></select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="icone"><i class="fas fa-database fa-2x"></i></div>			
+					<input class="inputs" type="text" name="quantidadeEmEstoque" id="quantidadeEmEstoque" placeholder="Valor Disponível em Estoque">	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="icone"><i class="fas fa-boxes fa-2x"></i></div>
+					<input class="inputs" type="text" name="quantidade" id="quantidade" placeholder="Informe a Quantidade">
+				</td>
+			</tr>
+			<input id="valorUn" name="valorUn" style="display: none;">	
+			<input id="idProduto" name="idProduto" style="display: none;">
+			<input id="idVenda" name="idVenda" style="display: none;">
+			<input id="lista" name="lista" style="display: none;">			
+		</table>
+	</form>
+</div>

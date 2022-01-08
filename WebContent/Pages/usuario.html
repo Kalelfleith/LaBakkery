@@ -1,0 +1,71 @@
+<div id="divTitulo"><h2 class="titleh2">NOVO USUÁRIO</h2></div>
+<form name="frmAddUsuario" id="addUsuario" class="frmInserir">
+	<div id="corpo-form">
+		<table>
+			<legend>Novo Usuário</legend><br>
+			<tr>
+				<th>Nome do Utilizador:</th>
+				<td><input type="text" name="nome"></td>
+				<th>Matricula:</th>
+				<td><input type="text" name="matricula"></td>
+			</tr>
+			<tr>
+				<th>Senha:</th>
+				<td><input type="text" name="senha" id="senha"></td>
+			</tr>
+			<tr>
+				<th>Confirma Senha:</th>
+				<td><input type="text" name="confirmasenha"></td>
+			</tr>
+			<tr>
+				<th>Cargo:</th>
+				<td>
+					<select id="selCargo" name="cargo">
+						<option>Selecione:</option>
+						<option>Gerente</option>
+						<option>Caixa</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<button type="button" onclick="PADARIA.cadastrarUsuario()" class="buttonform">Cadastrar</button>
+		<button type="reset" class="buttonform">Limpar</button>
+	</div>
+</form>
+
+<div id="divTitulo"><h2 class="titleh2">REGISTRO DE USUÁRIOS</h2></div>
+<form id="filtraUsuario" class="frmFiltrar" name="frmformUsuario">
+		<legend>Filtrar</legend>
+		<center><input type="text" name="txtbusca" id="campoBuscaUsuario"  placeholder="Pesquise pelo Usuario"></center>
+		<button type="button" onclick="PADARIA.buscarUsuario()" class="buttonform">Buscar</button>
+</form>		
+<div id="listaUsuarios" class="listaRegistros">
+</div>
+
+<div id="modalEditaUsuario" class="modalEditar">
+	<form name="frmEditaUsuario" id="addUsuario" class="frmInserir">
+	<div id="corpo-form">
+		<table>
+			<legend>Editar Usuário</legend><br>
+			<tr>
+				<th>Nome:</th>
+				<td>
+					<input type="text" name="nome" id="nome">
+				</td>
+			</tr>
+			<tr>
+				<th>Senha:</th>
+				<td>
+					<input type="text" name="senha" id="senha">
+				</td>
+			</tr>
+			<th>Cargo:</th>
+				<td>
+					<select id="selCargoEdicao" name="cargo">
+						<option value="">Selecione:</option>
+					</select>
+				</td>
+		</table>
+		<input type="hidden" name="idUsuario" id="idUsuario">
+	</div>
+	</form>

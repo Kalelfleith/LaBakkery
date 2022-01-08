@@ -1,0 +1,40 @@
+<div id="divTitulo"><h2 class="titleh2">NOVA CATEGORIA</h2></div>
+<form name="frmAddCategoria" id="addCategoria" class="frmInserirCategoria">
+	<div id="corpo-form">
+		<table>
+			<legend>Nova Categoria</legend><br>
+			<tr>
+				<th>Nome:</th>
+				<td><input type="text" name="descricao"></td>
+			</tr>
+		</table>
+		<button type="button" onclick="PADARIA.cadastrarCategoria()" class="buttonform">Cadastrar</button>
+		<button type="reset" class="buttonform">Limpar</button>
+	</div>
+</form>
+
+<div id="divTitulo"><h2 class="titleh2">REGISTRO DE CATEGORIAS</h2></div>
+<form id="filtraProduto" class="frmFiltrar" name="frmformProduto">
+		<legend>Filtrar</legend>
+		<center><input type="text" name="txtbusca" id="campoBuscaCategoria"  placeholder="Pesquise pela Categoria"></center>
+		<button type="button" onclick="PADARIA.buscarCategoria()" class="buttonform">Buscar</button>
+</form>		
+<div id="listaCategorias" class="listaRegistros">
+</div>
+
+<div id="modalEditaCategoria" class="modalEditar">
+	<form name="frmEditaCategoria" id="addCategoria" class="frmInserir">
+	<div id="corpo-form">
+		<table>
+			<legend>Editar Categoria</legend><br>
+			<tr>
+				<th>Nome:</th>
+				<td>
+					<input type="text" id="descricao" name="descricao">
+				</td>
+			</tr>
+		</table>
+		<input type="hidden" name="idCategoria">
+	</div>
+	</form>
+</div>

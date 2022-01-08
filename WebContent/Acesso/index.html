@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LA Bakery</title>
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="../css/siteVendas.css">
+	<link rel="stylesheet" type="text/css" href="../css/faturamento.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+	
+	<!-- Link Jquery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<!-- Links / Calendário  -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			
+  	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  
+	 <script src="../js/admin.js"></script>
+	 <script src="../js/jquery-ui.js"></script>
+	 <script src="../js/product.js"></script>
+	 <script src="../js/categoria.js"></script>
+	 <script src="../js/usuario.js"></script>
+	 <script src="../js/converteSenha/envia.js"></script>
+	 <script src="../js/venda.js"></script>
+	 <script src="../js/faturamento.js"></script>
+	 <script src="../Pages/Login/login.js"></script>
+	 <script src="../js/mostrarUsuarioLogado.js"></script>
+	 
+</head>
+
+<body>
+	<header> 
+	<img id="logo" src="../imgs/logoBranca.png">
+	<div class="iconeHeader"><i class="fas fa-user-circle fa-2x"><div class="mostrarNome"></div></i><!--<a href="http://localhost:8081/ProjetoPadaria/logoff">--><i class="fas fa-door-open fa-2x" onclick="httpGet()"></i></div>
+		<nav>
+			<a class="opcao" onclick="PADARIA.buscarPaginaCategoria()">Categoria</a>
+			<a class="opcao" onclick="PADARIA.buscarPaginaProduto()">Produto</a>
+			<a class="opcao" onclick="PADARIA.buscarPaginaFaturamento()">Relatório</a>
+			<a class="opcao" onclick="PADARIA.buscarPaginaVendas()">Venda</a>
+			<a class="opcao" onclick="PADARIA.buscarPaginaUsuario()">Usuário</a>
+		</nav>
+	</header>
+	<section id="ambientehtml">
+	
+	
+	</section>
+	<div id="modalAviso"></div>
+	
+	<footer>Copyright &copy; P.I 2020</footer>
+
+</body>
+<script>
+	function httpGet() {
+		
+		window.location.href = "http://localhost:8081/ProjetoPadaria/logoff";
+		
+	}
+</script>
+
+</html>

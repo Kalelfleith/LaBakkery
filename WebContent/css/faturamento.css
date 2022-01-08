@@ -1,0 +1,175 @@
+.titleh2Faturamento{
+	text-shadow: 1px 0px;
+}
+
+div#divTituloFaturamento{
+	border: none;
+	width: 100%;
+	text-align: center;
+	color: #161b22;
+	border-bottom: 2px solid black;
+}
+
+div#divTituloResultado{
+	border: none;
+	width: 100%;
+	text-align: center;
+	color: #161b22;
+}
+
+/*Formulário Faturamento*/
+
+#corpo-form-faturamento{
+	background: #fff;
+	margin-top: 2%;
+	box-shadow: 0 7px 26px -2px rgb(0 0 0 / 10%);
+	border-radius: 4px;
+	border: 1px solid black;
+	text-align: center;
+	background: #fff;
+	height: 200px;
+	width: 40%;
+	margin-left: 29%;
+}
+
+
+#consultaFaturamento{ /*Botão Consultar do Menu Faturamento*/
+	width: 40%;
+	height: 60%;
+    background: #000000;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    float: left;
+    margin-left: 27%;
+}
+
+legend#tituloMenuFaturamento{
+	width: 100%;
+	text-align: center;
+	margin: 1% auto 0px auto;
+}
+
+/*Tabela do Formulario Faturamento*/
+
+#menufaturamento td, #menufaturamento th {
+  border-bottom: 2px solid black;
+  padding: 8px;
+  text-align: center;
+}
+#menufaturamento th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color:black;
+}
+#menufaturamento tr, #menufaturamento td{
+	text-align: center;
+	border: none;
+}
+
+#menufaturamento{
+	width: 98%;
+	margin-top: 3%;
+}
+
+/*Tabela do Formulario Faturamento 2*/
+
+#menufaturamento2{
+	width: 98%;
+	margin-top: 3%;
+}
+
+#menufaturamento2 td, #menufaturamento2 th {
+  border-bottom: 2px solid black;
+  padding: 8px;
+  text-align: center;
+}
+#menufaturamento2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color:black;
+}
+#menufaturamento2 tr, #menufaturamento2 td{
+	text-align: center;
+	border: none;
+}
+
+/*Icone*/
+
+.iconeMenuFaturamento{
+	width: 10%;    
+    float: left;
+    padding: 12px;
+}
+
+.buttonPDF{
+	height: 80%;
+	width: 50%;
+	text-align: center;
+	font-size: 10pt;
+}
+
+/*Inputs do Menu Faturamento*/
+
+#data1, #data2{
+	width: 60%;
+    overflow: hidden;
+    font-size: 16px;
+    border-bottom: 2px solid #737373;
+}
+
+/***** Configuração da Div onde carrega a tabela de consulta ******/
+
+#configtabelaFaturamento{
+	margin: 1.5%;
+	margin-bottom: 3%;
+    height: 95%;
+    width: 97%;
+    background: white;
+    border: 1px solid black;
+}
+#configtabelaFaturamento td{	
+	padding: 5px; 
+	cursor: pointer;
+}
+#configtabelaFaturamento tr:hover{
+	background:#DCDCDC;
+}
+
+#configtabelaFaturamento th{
+	min-width: 200px;
+}
+
+/*Configuração da Tabela Resultado da Consulta*/
+
+.tabelaResultadoConsulta {
+  	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  	border-collapse: collapse;
+ 	width: 100%;
+}
+
+.tabelaResultadoConsulta td, .tabelaResultadoConsulta th {
+  	border-bottom: 2px solid black;
+  	padding: 8px;
+}
+.tabelaResultadoConsulta th {
+ 	padding-top: 12px;
+  	padding-bottom: 12px;
+  	text-align: center;
+  	color:black;
+}
+.tabelaResultadoConsulta tr{
+	text-align: right;
+	border: none;
+}
+
+.tabelaResultadoConsulta td{
+	text-align: center;
+	border: none;
+}
+
+.posicaoTd{
+	text-align: right !important;
+}
